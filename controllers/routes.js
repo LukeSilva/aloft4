@@ -412,6 +412,7 @@ module.exports = function(app, passport, db) {
 						res.render('watch', {
 							user: req.params.user,
 							event: req.params.event,
+							event_title: event.title,
 							prefs: prefs,
 							marker: '≈'
 						});
