@@ -1,0 +1,4 @@
+FROM mongo
+ENV MONGO_INITDB_DATABASE users
+COPY seed.js /docker-entrypoint-initdb.d/seed.js
+
