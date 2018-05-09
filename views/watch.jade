@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
 	head
 		meta(charset='utf-8')
-		title #{event}
+		title #{event_title}
 		link(rel='icon', type='image/png', href='/favicons/aloft16x16.png')
 		link(rel='stylesheet', href='/node/bootstrap/dist/css/bootstrap.min.css')
 		link(href='/themes/yummy/css/overlay-effects/overlay-effects.css', rel='stylesheet', type='text/css')
@@ -20,7 +20,7 @@ html(lang='en')
 		meta(name='mobile-web-app-capable', content='yes')
 		meta(name='apple-mobile-web-app-capable', content='yes')
 		meta(name='apple-mobile-web-app-status-bar-style', content='black')
-		meta(name='apple-mobile-web-app-title', content='#{event} Captions')
+		meta(name='apple-mobile-web-app-title', content='#{event_title} Captions')
 
 	body(ng-app='Aloft', ng-controller='AloftController' ng-style="{'backgroundColor': bgColor}")
 		.status-bar.connected
@@ -45,7 +45,7 @@ html(lang='en')
 										h4.margin-top-0.margin-bottom-20px Information
 										.callout.callout-feed
 											h4 Event Name
-											|  #{event}
+											|  #{event_title}
 										.callout.callout-user
 											h4 Stenographer
 											|  #{user}
